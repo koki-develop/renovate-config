@@ -1,8 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "schedule": [
-    "every weekend"
-  ],
   "extends": [
     "config:recommended",
     "github>aquaproj/aqua-renovate-config#2.3.1"
