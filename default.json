@@ -1,6 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
+  "rangeStrategy": "pin",
   "major": { "minimumReleaseAge": "7 days" },
   "minor": { "minimumReleaseAge": "3 days" },
   "patch": { "minimumReleaseAge": "2 days" }
