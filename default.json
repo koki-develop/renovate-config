@@ -3,6 +3,7 @@
   "extends": [
     "config:recommended",
     "local>koki-develop/renovate-config:mise",
-    "local>koki-develop/renovate-config:aqua"
+    "local>koki-develop/renovate-config:aqua",
+    "local>koki-develop/renovate-config:biome.json5"
   ]
 }
