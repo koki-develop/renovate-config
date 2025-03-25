@@ -4,9 +4,5 @@
     "config:recommended",
     "local>koki-develop/renovate-config:mise",
     "local>koki-develop/renovate-config:aqua"
-  ],
-  "rangeStrategy": "pin",
-  "major": { "minimumReleaseAge": "7 days" },
-  "minor": { "minimumReleaseAge": "3 days" },
-  "patch": { "minimumReleaseAge": "2 days" }
+  ]
 }
