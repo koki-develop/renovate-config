@@ -1,6 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "rangeStrategy": "pin",
+  "prConcurrentLimit": 3,
   "major": { "minimumReleaseAge": "7 days" },
   "minor": { "minimumReleaseAge": "3 days" },
   "patch": { "minimumReleaseAge": "2 days" }
