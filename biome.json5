@@ -4,7 +4,9 @@
     {
       customType: "regex",
       fileMatch: ["^biome\\.json$"],
-      matchStrings: ["https://biomejs\\.dev/schemas/(?<currentValue>[^/]+)/schema\\.json"],
+      matchStrings: [
+        "https://biomejs\\.dev/schemas/(?<currentValue>[^/]+)/schema\\.json",
+      ],
       datasourceTemplate: "npm",
       depNameTemplate: "@biomejs/biome",
     },
