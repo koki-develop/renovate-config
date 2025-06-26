@@ -7,6 +7,5 @@
     "local>koki-develop/renovate-config:biome.json5",
     "local>koki-develop/renovate-config:docker",
     "local>koki-develop/renovate-config:go",
-    "local>koki-develop/renovate-config:mise"
   ]
 }
