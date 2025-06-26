@@ -10,13 +10,19 @@ This repository contains Renovate configuration presets for managing dependency 
 
 - `default.json` - Main preset that extends config:recommended and includes all tool-specific presets
 - `base.json` - Base configuration with pin strategy and release age minimums  
-- `mise.json` - Custom managers for mise.toml files (Go, npm, gem dependencies)
 - `aqua.json` - Extends aqua-renovate-config for aqua package manager
 - `biome.json5` - Custom manager for Biome schema updates in biome.json files
+- `docker.json` - Docker-related configuration preset
+- `go.json` - Go-specific dependency management preset
 
 ## Common Commands
 
-Format JSON files:
+Format all files:
+```bash
+npm run format
+```
+
+Format JSON files only:
 ```bash
 npx prettier --write "*.json"
 ```
@@ -30,7 +36,7 @@ npx renovate-config-validator
 
 The preset system follows a hierarchical structure:
 - `default.json` serves as the entry point, extending Renovate's recommended config
-- Tool-specific presets (`mise.json`, `aqua.json`, `biome.json5`) handle custom dependency detection
+- Tool-specific presets (`aqua.json`, `biome.json5`, `docker.json`, `go.json`) handle custom dependency detection
 - `base.json` provides common settings like version pinning and minimum release ages
 - Each preset can be used independently via `local>koki-develop/renovate-config:preset-name`
 
