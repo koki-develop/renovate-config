@@ -4,5 +4,12 @@
   "prConcurrentLimit": 3,
   "major": { "minimumReleaseAge": "7 days" },
   "minor": { "minimumReleaseAge": "3 days" },
-  "patch": { "minimumReleaseAge": "2 days" }
+  "patch": { "minimumReleaseAge": "2 days" },
+  "packageRules": [
+    {
+      "matchPackageNames": ["koki-develop/github-actions-lint"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    }
+  ]
 }
