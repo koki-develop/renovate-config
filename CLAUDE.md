@@ -9,7 +9,7 @@ This repository contains Renovate configuration presets for managing dependency 
 ## Repository Structure
 
 - `default.json` - Main preset that extends config:recommended and includes all tool-specific presets
-- `base.json` - Base configuration with pin strategy and release age minimums  
+- `base.json` - Base configuration with pin strategy and release age minimums
 - `aqua.json` - Extends aqua-renovate-config for aqua package manager
 - `biome.json5` - Custom manager for Biome schema updates in biome.json files
 - `docker.json` - Docker-related configuration preset
@@ -18,16 +18,19 @@ This repository contains Renovate configuration presets for managing dependency 
 ## Common Commands
 
 Format all files:
+
 ```bash
 npm run format
 ```
 
 Format JSON files only:
+
 ```bash
 npx prettier --write "*.json"
 ```
 
 Validate Renovate configuration:
+
 ```bash
 npx renovate-config-validator
 ```
@@ -35,6 +38,7 @@ npx renovate-config-validator
 ## Architecture
 
 The preset system follows a hierarchical structure:
+
 - `default.json` serves as the entry point, extending Renovate's recommended config
 - Tool-specific presets (`aqua.json`, `biome.json5`, `docker.json`, `go.json`) handle custom dependency detection
 - `base.json` provides common settings like version pinning and minimum release ages
