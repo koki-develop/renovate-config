@@ -4,7 +4,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "prettier": "3.5.3",
+    "prettier": "3.6.2",
     "renovate": "41.76.0"
   }
 }
