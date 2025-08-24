@@ -5,6 +5,6 @@
   "dependencies": {},
   "devDependencies": {
     "prettier": "3.6.2",
-    "renovate": "41.82.1"
+    "renovate": "41.82.3"
   }
 }
