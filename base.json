@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["schedule:nonOfficeHours"],
   "rangeStrategy": "pin",
   "prConcurrentLimit": 3,
   "minimumReleaseAge": "7 days",
